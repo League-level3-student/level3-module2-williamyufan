@@ -54,11 +54,11 @@ class _01_SwappingDigits {
 	public static int findMiddle(int[] arr) {
 
 	
-	
+		
 			sortIntArray(arr);
-			int y=arr.length/2;
+			int y=(arr.length)/2;
+			
 		
-		
-		return y;
+		return arr[y];
 	}
 }
