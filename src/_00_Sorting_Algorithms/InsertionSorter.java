@@ -14,12 +14,15 @@ public class InsertionSorter extends Sorter {
 		// the length of the array 
 		for (int i = 1; i < array.length; i++) {
 			for (int j = i; j>0; j--) {
-				if(j<j-1) {
-					int q=j;
-					j=j-1;
-					q=j-1;
+				if(array[j]<array[j-1]) {
+					int q=array[j];
+					array[j]=array[j-1];
+					array[j-1]=q;
+					
 				}
+				
 			}
+			display.updateDisplay();
 		}
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0

@@ -11,5 +11,6 @@ public class _00_LinearSearch {
 		//   If the value is not found in the array, return -1.
 		
 		return 0;
+		
 	}
 }
